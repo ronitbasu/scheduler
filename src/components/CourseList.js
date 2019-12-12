@@ -18,6 +18,7 @@ const CourseList = ({ courses, user }) => {
 
   return (
     <React.Fragment>
+    <TermSelector state={ { term, setTerm } }/>
       <Button.Group>
         { termCourses.map(course =>
            <Course key={ course.id } course={ course }
